@@ -4,19 +4,21 @@
   "description": "Backend para el proyecto del curos desarrollar una red social con angular y node",
   "main": "index.js",
   "scripts": {
-    "start":"nodemon index.js",
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jose David Arroyo Alvarez",
   "license": "MIT",
   "dependencies": {
+    "angular2-moment": "^1.8.0",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.2",
     "connect-multiparty": "^2.1.0",
     "express": "^4.16.2",
     "jwt-simple": "^0.5.1",
     "moment": "^2.20.1",
-    "mongoose": "^5.0.5"
+    "mongoose": "^5.0.5",
+    "mongoose-pagination": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.14.12"

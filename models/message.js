@@ -1,14 +1,16 @@
 'use strict'
 
-var moongose= require('moongose');
-var Schema = moongose.Schema;
+var mongoose = require('mongoose');
+
+var Schema = mongoose.Schema;
 
 var MessageSchema = Schema({
 	text: String,
+	viewed: String,
 	created_at: String,
 	emitter: { type: Schema.ObjectId, ref: 'User'},
-	reciber: { type: Schema.ObjectId, ref: 'User'}
+	receiver: { type: Schema.ObjectId, ref: 'User'}
 
 
 });
-module.exports = moongose.model('Message',MessageSchema);
+module.exports = mongoose.model('Message',MessageSchema);
